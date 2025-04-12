@@ -6,44 +6,76 @@
 </head>
 <body>
 
-  <header>
-    <h1>Site de Prática com HTML</h1>
-    <nav>
-      <a href="#sobre">Sobre</a> |
-      <a href="#aprendizados">O que estou aprendendo</a>
-    </nav>
-  </header>
+    <header>
+      <h1>Site de Prática com HTML</h1>
+      <nav>
+        <a href="#sobre">Sobre</a> |
+        <a href="#aprendizados">O que estou aprendendo</a> |
+        <a href="#contato">Contato</a> |
+        <a href="#login">Login</a>
+      </nav>
+    </header>
+  
 
-  <!-- Espaço para forçar rolagem e testar os cliques -->
-  <p>Bem-vindo! Role para ver as seções...</p>
-  <br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br>
-
-  <section id="sobre">
-    <h2>Sobre o site</h2>
-    <p>Este site foi criado com o objetivo de praticar a criação de páginas em HTML utilizando tags que eu ainda não havia usado, como <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code> e <code>&lt;section&gt;</code>.</p>
-    <p>É um exercício simples, mas muito útil para entender a estrutura básica de uma página web.</p>
-  </section>
-
-  <!-- Mais espaçamento para rolagem -->
-  <br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br>
-
-  <section id="aprendizados">
-    <h2>O que estou aprendendo</h2>
-    <ul>
-      <li>Uso da tag <code>&lt;header&gt;</code> para criar o cabeçalho da página</li>
-      <li>Uso da tag <code>&lt;footer&gt;</code> para criar o rodapé</li>
-      <li>Uso da tag <code>&lt;section&gt;</code> para organizar o conteúdo</li>
-      <li>Como estruturar um site somente com HTML</li>
-    </ul>
-    <p>Este é um dos meus primeiros sites e está me ajudando a fixar os conceitos básicos.</p>
-  </section>
-
-  <!-- Rodapé final -->
-  <footer>
-    <p>&copy; 2025 Site de Prática. Criado por Rafael Tomé da Silva.</p>
-  </footer>
-
-</body>
+    <p>Bem-vindo! Role para ver as seções...</p>
+  
+    <section id="sobre">
+      <h2>Sobre o site</h2>
+      <p>Este site foi criado com o objetivo de praticar a criação de páginas em HTML utilizando tags que eu ainda não havia usado, como <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;form&gt;</code>, <code>&lt;label&gt;</code>, <code>&lt;input&gt;</code>, e <code>&lt;textarea&gt;</code>.</p>
+      <p>Adicionei formulários de contato e login para praticar o uso dessas novas tags.</p>
+    </section>
+  
+  
+    <section id="aprendizados">
+      <h2>O que estou aprendendo</h2>
+      <ul>
+        <li>Uso da tag <code>&lt;header&gt;</code> para criar o cabeçalho da página</li>
+        <li>Uso da tag <code>&lt;footer&gt;</code> para criar o rodapé</li>
+        <li>Uso da tag <code>&lt;section&gt;</code> para organizar o conteúdo</li>
+        <li>Uso da tag <code>&lt;form&gt;</code> para criar formulários de entrada de dados</li>
+        <li>Uso da tag <code>&lt;label&gt;</code> para associar rótulos aos campos de formulário</li>
+        <li>Uso da tag <code>&lt;input&gt;</code> para campos de texto e senha</li>
+        <li>Uso da tag <code>&lt;textarea&gt;</code> para campos de mensagem multilinha</li>
+        <li>Como estruturar um site somente com HTML</li>
+      </ul>
+      <p>Este é um dos meus primeiros sites e está me ajudando a fixar os conceitos básicos de HTML, incluindo formulários e campos interativos.</p>
+    </section>
+  
+    <!-- Formulário de Contato -->
+    <section id="contato">
+      <h2>Contato</h2>
+      <form action="#" method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+  
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+  
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+  
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  
+    
+    <section id="login">
+      <h2>Login</h2>
+      <form action="#" method="post">
+        <label for="username">Usuário:</label><br>
+        <input type="text" id="username" name="username" placeholder="não utilize acento" required><br><br>
+  
+        <label for="pwd">Senha:</label><br>
+        <input type="password" id="pwd" name="pwd" required><br><br>
+  
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  
+    
+    <footer>
+      <p>&copy; 2025 Site de Prática. Criado por Rafael Tomé da Silva.</p>
+    </footer>
+  
+  </body>
 </html>
